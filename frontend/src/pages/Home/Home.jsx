@@ -1,5 +1,7 @@
 import React from "react";
 import { assets } from "../../assets/assets";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import {
   Carousel,
   CarouselContent,
@@ -7,32 +9,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const Hero = () => (
   <div className="w-full">
     <Carousel>
       <CarouselContent>
         <CarouselItem>
-          <img
+          <LazyLoadImage
             src={assets.agriculture_field}
             alt="Agricultural field"
             className="w-full h-72 object-cover rounded-lg mb-8"
-          />
-        </CarouselItem>
-
-        <CarouselItem>
-          <img
-            src={assets.hands}
-            alt="Agricultural field"
-            className="w-full h-72 object-cover rounded-lg mb-8"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <img
-            src={assets.farmer}
-            alt="Agricultural field"
-            className="w-full h-72 object-cover rounded-lg mb-8"
+            loading="lazy"
           />
         </CarouselItem>
       </CarouselContent>
