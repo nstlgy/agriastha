@@ -1,13 +1,45 @@
 import React from "react";
 import { assets } from "../../assets/assets";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Hero = () => (
   <div className="w-full">
-    <img
-      src={assets.agriculture_field}
-      alt="Agricultural field"
-      className="w-full h-72 object-cover rounded-lg mb-8"
-    />
+    <Carousel>
+      <CarouselContent>
+        <CarouselItem>
+          <img
+            src={assets.agriculture_field}
+            alt="Agricultural field"
+            className="w-full h-72 object-cover rounded-lg mb-8"
+          />
+        </CarouselItem>
+
+        <CarouselItem>
+          <img
+            src={assets.hands}
+            alt="Agricultural field"
+            className="w-full h-72 object-cover rounded-lg mb-8"
+          />
+        </CarouselItem>
+        <CarouselItem>
+          <img
+            src={assets.farmer}
+            alt="Agricultural field"
+            className="w-full h-72 object-cover rounded-lg mb-8"
+          />
+        </CarouselItem>
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+
     <h1 className="text-4xl font-bold text-center mb-4">
       Welcome to Agriastha
     </h1>

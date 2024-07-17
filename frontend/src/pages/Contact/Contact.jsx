@@ -55,8 +55,12 @@ function Contact() {
 
         <div className="flex-1">
           <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-          <p className="mb-2">Email: info@agriastha.com</p>
-          <p className="mb-4">Phone: (+91) 8126510445</p>
+          <p className="mb-2">
+            <span className="font-semibold">Email: </span>info@agriastha.com
+          </p>
+          <p className="mb-4">
+            <span className="font-semibold">Phone: </span>(+91) 8126510445
+          </p>
           <div className="flex space-x-4">
             <Facebook size={24} />
             <Twitter size={24} />
