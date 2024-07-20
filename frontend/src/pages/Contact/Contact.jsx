@@ -3,6 +3,7 @@ import { Send, Facebook, Twitter, Linkedin } from "lucide-react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import "./Contact.css";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -71,7 +72,7 @@ function Contact() {
 
       <div className="w-full">
         <h2 className="text-xl font-semibold mb-4">Our Location</h2>
-        <div className="h-64 w-full rounded-md overflow-hidden">
+        <div className="h-64 w-full rounded-md overflow-hidden map-container">
           <MapContainer
             center={position}
             zoom={zoom}

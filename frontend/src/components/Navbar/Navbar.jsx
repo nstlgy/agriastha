@@ -7,6 +7,7 @@ import "./Navbar.css";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
+  { to: "/guidelines", label: "Guidelines" },
   { to: "/gallery", label: "Gallery" },
   { to: "/membership", label: "Membership" },
   { to: "/contact", label: "Contact" },
@@ -32,7 +33,7 @@ function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium navs"
               >
                 {link.label}
               </Link>
