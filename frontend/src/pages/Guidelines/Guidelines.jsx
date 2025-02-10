@@ -16,32 +16,36 @@ const Guidelines = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12">
-      <div className="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold mb-6 text-center text-primary border-b pb-4">
-          Guidelines for Authors
-        </h1>
-        <h2 className="text-xl font-semibold mb-6 text-center text-gray-700">
-          AGRIASTHA - Indigenous Development in Agriculture
-        </h2>
+    <div className="bg-gray-100 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="p-6 sm:p-10">
+            <h1 className="text-3xl font-bold mb-2 text-center text-green-800 border-b pb-4">
+              Guidelines for Authors
+            </h1>
+            <h2 className="text-xl mb-6 text-center text-gray-700">
+              AGRIASTHA - Indigenous Development in Agriculture
+            </h2>
 
-        <p className="mb-8 text-gray-700 text-lg leading-relaxed">
-          Authors are requested to adhere to the following instructions when preparing manuscripts for publication in our biannual Journal. Strict compliance with these guidelines ensures a smooth review process and timely publication.
-        </p>
+            <p className="mb-8 text-gray-700 text-lg leading-relaxed">
+              Authors are requested to adhere to the following instructions when preparing manuscripts for publication in our biannual Journal. Strict compliance with these guidelines ensures a smooth review process and timely publication.
+            </p>
 
-        <ol className="list-decimal pl-6 space-y-6">
-          {guidelines.map((guideline, index) => (
-            <li key={index} className="text-gray-800 leading-relaxed">
-              {guideline}
-            </li>
-          ))}
-        </ol>
+            <ol className="list-decimal pl-6 space-y-6">
+              {guidelines.map((guideline, index) => (
+                <li key={index} className="text-gray-800 leading-relaxed">
+                  {guideline}
+                </li>
+              ))}
+            </ol>
 
-        <div className="mt-12 p-6 bg-gray-100 rounded-lg">
-          <h3 className="text-xl font-semibold mb-4 text-primary">Important Note:</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Adherence to these guidelines is crucial for consideration of your manuscript. Submissions that do not conform to these standards may be returned for revision before the peer review process can begin. We appreciate your cooperation in maintaining the high standards of our publication.
-          </p>
+            <div className="mt-12 p-6 bg-green-50 rounded-lg border border-green-200">
+              <h3 className="text-xl font-semibold mb-4 text-green-800">Important Note:</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Adherence to these guidelines is crucial for consideration of your manuscript. Submissions that do not conform to these standards may be returned for revision before the peer review process can begin. We appreciate your cooperation in maintaining the high standards of our publication.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
