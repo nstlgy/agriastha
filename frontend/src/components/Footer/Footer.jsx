@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { assets } from "@/assets/assets";
 import "./Footer.css";
-import { PhoneCall } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -98,10 +97,7 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                 >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                  />
+                  <path fillRule="evenodd" clipRule="evenodd" />
                 </svg>
               </a>
             </div>

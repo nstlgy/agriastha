@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery/Gallery";
 import Membership from "./pages/Membership/Membership";
 import Contact from "./pages/Contact/Contact";
 import Guidelines from "./pages/Guidelines/Guidelines";
+import Publications from "./pages/Publications/Publications";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/publications" element={<Publications />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/membership" element={<Membership />} />
         <Route path="/contact" element={<Contact />} />
